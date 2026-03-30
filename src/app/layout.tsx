@@ -4,6 +4,7 @@ import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import Scene from "@/components/canvas/Scene";
 import Experience from "@/components/canvas/Experience";
+import ContactWidget from "@/components/ContactWidget";
 
 const interFont = Inter({
   variable: "--font-inter",
@@ -38,6 +39,7 @@ export default function RootLayout({
           <main className="relative z-10 min-h-screen w-full">
             {children}
           </main>
+          <ContactWidget />
         </SmoothScroll>
       </body>
     </html>
